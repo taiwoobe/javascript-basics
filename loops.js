@@ -13,6 +13,11 @@
     console.log(john[i]);
  }
 
+// Looping Backwards
+ for (i = john.length - 1; i >= 0; i--) {
+    console.log(john[i]);
+ }
+
   // Using the while loop
  var i = 0;
  while (i < john.length) {
