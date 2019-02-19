@@ -22,7 +22,20 @@
 
 
 // Continue & Break Statement
- var john = ['john', 'Mark', 1990, 'student', 'single'];
- for (i = 0; i < john.length; i++) {
-    console.log(john[i]);
+// Code below only logs values of the array that are string values. 
+ var tope = ['tope', 'Adedayo', 1990, 'student', false, 'single'];
+ for (i = 0; i < tope.length; i++) {
+     if (typeof tope[i] !== 'string') {
+         continue;
+     }
+    console.log(tope[i]);
+ }
+
+// Code below only logs first set of values of the array that are string values. 
+ var tope = ['tope', 'Adedayo', 1990, 'student', false, 'single'];
+ for (i = 0; i < tope.length; i++) {
+     if (typeof tope[i] !== 'string') {
+         break;
+     }
+    console.log(tope[i]);
  }
